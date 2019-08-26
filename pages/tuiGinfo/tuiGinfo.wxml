@@ -1,0 +1,225 @@
+<view class='appBody'>
+  <!-- 主管纠错 -->
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        用户信息
+      </view>
+    </view>
+    <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          信息来源
+        </view>
+        <view class="dslukeRight">
+          <view>
+            {{xingbie[xingbieNum]}}
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          录入时间
+        </view>
+        <view class="dslukeRight">
+          <view>
+            {{xingbie[xingbieNum]}}
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          提报人
+        </view>
+        <view class="dslukeRight">
+          <view>
+            {{xingbie[xingbieNum]}}
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          客资状态
+        </view>
+        <view class="dslukeRight">
+          <view>
+            {{xingbie[xingbieNum]}}
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          预约时间
+        </view>
+        <view class="dslukeRight">
+          <view>
+            {{xingbie[xingbieNum]}}
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          门店门市
+        </view>
+        <view class="dslukeRight">
+          <view>
+            {{xingbie[xingbieNum]}}
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          订单时间
+        </view>
+        <view class="dslukeRight">
+          <view>
+            {{xingbie[xingbieNum]}}
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          到店时间
+        </view>
+        <view class="dslukeRight">
+          <view>
+            {{xingbie[xingbieNum]}}
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        合同编号
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入合同编号"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        套餐金额
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="0"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        收款金额
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="0"></input>
+      </view>
+    </view>
+  </view>
+  <!-- 推广模块 -->
+  <view class='contentBottom'>
+    <view class="detailBoxs">
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt tuiguangTxt">推广信息</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">信息来源：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">关键词：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">咨询方式：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">广告信息：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">广告ID：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">门店选择：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle sjBoxTitle1">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">推广备注：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='sjBoxsJG'></view>
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        备注内容或图片
+      </view>
+      <view></view>
+    </view>
+    <view class="sjBoxTitle sjBoxTitle2">
+      <textarea class="dslukeTxt" placeholder="请输入新客姓名">
+      
+      </textarea>
+    </view>
+    <view class="sjBoxTitle sjBoxTitle3">
+      <!-- <image class="sjBoxImg" src="{{imgUrl}}/denglu/dengluBJ.png" mode="widthFix"></image>
+      <image class="sjBoxImg" src="{{imgUrl}}/denglu/shouji.jpg" mode="widthFix"></image> -->
+      <view class="sjBoxTJ sjBoxImg">+</view>
+    </view>
+  </view>
+  <!-- 底部 按钮 -->
+  <view class='detailBottom'>
+    <view class='detailBtn' bindtap='FixedBtn' data-index="0">取消</view>
+    <view class='detailBtn' bindtap='FixedBtn' data-index="1">确定保存</view>
+  </view>
+</view>

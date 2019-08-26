@@ -1,0 +1,107 @@
+<view class="appBody">
+  <view class="YMD">
+    <view class="YMDTxt">
+      日简报
+    </view>
+    <view class="YMDBox">
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">提报量</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">有效量</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0.00%</view>
+        <view class="YMDListTxt2">有效率</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">入店量</view>
+      </view>
+    </view>
+    <view class="YMDBox">
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">订单量</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">营业额</view>
+      </view>
+      <view class="YMDList"></view>
+      <view class="YMDList YMDList1"></view>
+    </view>
+  </view>
+  <view class="YMD">
+    <view class="YMDTxt">
+      周简报
+    </view>
+    <view class="YMDBox">
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">提报量</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">有效量</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0.00%</view>
+        <view class="YMDListTxt2">有效率</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">入店量</view>
+      </view>
+    </view>
+    <view class="YMDBox">
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">订单量</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">营业额</view>
+      </view>
+      <view class="YMDList"></view>
+      <view class="YMDList YMDList1"></view>
+    </view>
+  </view>
+  <view class="YMD">
+    <view class="YMDTxt">
+      月简报
+    </view>
+    <view class="YMDBox">
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">提报量</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">有效量</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0.00%</view>
+        <view class="YMDListTxt2">有效率</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">入店量</view>
+      </view>
+    </view>
+    <view class="YMDBox">
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">订单量</view>
+      </view>
+      <view class="YMDList">
+        <view class="YMDListTxt1">0</view>
+        <view class="YMDListTxt2">营业额</view>
+      </view>
+      <view class="YMDList"></view>
+      <view class="YMDList YMDList1"></view>
+    </view>
+  </view>
+</view>

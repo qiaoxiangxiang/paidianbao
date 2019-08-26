@@ -1,0 +1,31 @@
+<view class="appBody">
+  <view class="content">
+      <view class="titleBox">
+        <view class="titleTxt">
+          账号登录
+        </view>
+      </view>
+      <view class="DengLuInpBox">
+        <view class="DengLuInp">
+          <image class="InpImg" src="{{imgUrl}}/denglu/denglu_03.png" mode="widthFix"></image>
+          <input class="InpTxt" placeholder="手机号"></input>
+        </view>
+        <view class="DengLuInp DengLuInp1">
+          <image class="InpImg" src="{{imgUrl}}/denglu/denglu_06.png" mode="widthFix"></image>
+          <input class="InpTxt" placeholder="密码"></input>
+        </view>
+        <view class="DengLuBtn">
+          登  录
+        </view>
+        <view class="DengLuBottom">
+          <view class="DengLuTxt1">忘记登录密码?</view>
+          <view class="DengLuTxtBox">
+            <view class="DengLuTxt2">没有账号？</view>
+            <view class="DengLuTxt3">免费注册</view>
+          </view>
+        </view>
+      </view>
+     
+  </view>
+  <image class="dengluBJ" src="{{imgUrl}}/denglu/dengluBJ.png" mode="widthFix"></image>
+</view>

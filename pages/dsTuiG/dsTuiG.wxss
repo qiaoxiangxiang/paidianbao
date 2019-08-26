@@ -1,0 +1,121 @@
+/* pages/dsTuiG/dsTuiG.wxss */
+.dsTop{
+  width: 100%;
+  height: 170rpx;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dsTopBox{
+  width: 680rpx;
+  height: 90rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background: #f4f4f4;
+  padding: 0 20rpx;
+  border-radius: 10rpx;
+}
+.dsTopBoxLeft,.dsTopTxtBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dsTopBoxTight{
+  font-size: 25.82rpx;
+  color: #aaaeb7;
+}
+.dsTopTxtBox{
+  flex-direction: column;
+  margin-left: 10rpx;
+}
+.dsTopTxt1,.dsTopTxt3,.dsTopTxt4{
+  font-size: 21.27rpx;
+  color: #ababac;
+}
+.dsTopTxt3,.dsTopTxt4{
+  color: #333;
+}
+.dsTopTxt4{
+  margin-top: 10rpx;
+}
+.dsTopImg1{
+  width: 30rpx;
+}
+.dsTopImg2{
+  width: 16rpx;
+  margin-left: 10rpx;
+}
+/* 底部 */
+.dsBottom{
+  width: 100%;
+  padding: 40rpx 0;
+  background: #f2f3f7;
+}
+.dsBottomBox{
+  width: 672rpx;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 10rpx;
+}
+.dsBottomTitle{
+  width: 642rpx;
+  padding-left: 30rpx;
+  height: 96rpx;
+  font-size: 29.02;
+  color: #333;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #f3f3f3;
+}
+.dsBotBto{
+  display: flex;
+  align-items: center;
+}
+.dsBotLeft{
+  width: 210rpx;
+  border-right: 2rpx solid #f3f3f3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dsBotRight{
+  width: 460rpx;
+  height: auto;
+  overflow: auto;
+}
+.dsBotLeftTxt{
+  font-size: 29.59rpx;
+  color: #636878;
+  width: 150rpx;
+  height: 70rpx;
+  padding: 0 30rpx;
+  line-height: 70rpx;
+  text-align: center;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  background: #f8f8f8;
+}
+.dsBotLeft .dsBotLeftTxt:nth-of-type(2n){
+  background: #fff;
+}
+.dsBotBoxs{
+  width: 100%;
+  display: flex;
+  background: #f8f8f8;
+}
+.dsBotBoxs:nth-of-type(2n){
+  background: #fff;
+}
+.dsBottxt{
+  width: 100rpx;
+  padding: 0 10rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 29.59rpx;
+  color: #636878;
+}

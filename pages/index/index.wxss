@@ -1,0 +1,174 @@
+/* pages/index/index.wxss */
+.appBody{
+  position: relative;
+  padding-top: 44rpx;
+  padding-bottom: 110rpx;
+  background: #f6f6f6;
+}
+.indexBJS{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 178rpx;
+  background: #9f9f9f;
+}
+.contentTop,.contentCenter,.contentBottom{
+  position: relative;
+  z-index: 2;
+  width: 705rpx;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 10rpx #eee;
+  margin-top: 20rpx;
+  border-radius: 12rpx;
+}
+.contentTop{
+  height: 225rpx;
+  margin-top: 0;
+  box-shadow: 0 0rpx 0rpx #eee;
+  display: flex;
+  align-items: center;
+}
+.contentCenter{
+  height: 295rpx;
+}
+.contentBottom{
+  height: 385rpx;
+}
+
+.userImage{
+  width: 115rpx;
+  margin-left: 50rpx;
+  margin-right: 42rpx;
+}
+.userTxtBox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.userTxtBox1{
+  display: flex;
+  align-items: center;
+}
+.WXImage{
+  width: 45rpx;
+  margin-left: 30rpx;
+}
+.PhoneImage{
+  width: 31rpx;
+  margin-right: 12rpx;
+}
+.userName{
+  font-size: 35rpx;
+  margin-left: 10rpx;
+}
+.userPhone{
+  font-size: 25rpx;
+}
+.userJG{
+  width: 100%;
+  height: 22rpx;
+}
+.contentTitle{
+  width: 615rpx;
+  height: 60rpx;
+  padding-top: 38rpx;
+  font-size: 34.94rpx;
+  color: #333;
+  margin: 0 auto;
+  border-bottom: 4rpx solid #f6f6f6;
+}
+.contentListBox{
+  width: 615rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 26rpx;
+}
+.contentList{
+  width: 25%;
+  height: 117rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.listImg{
+  width: 72rpx;
+}
+.listTxt{
+  font-size: 25rpx;
+  color: #333;
+  margin-top: 10rpx;
+}
+/* bottom */
+.bottomTitle{
+  width: 615rpx;
+  height: 60rpx;
+  padding-top: 38rpx;
+  font-size: 34.94rpx;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 4rpx solid #f6f6f6;
+}
+.bottomTitle1{
+  font-size: 30.01rpx;
+  color: #afafaf;
+}
+.BottomList{
+  width: 30.33%;
+  height: 80rpx;
+  align-items: flex-start;
+  margin-left: 3%;
+  margin-bottom: 35rpx;
+}
+.BottomList .listTxt{
+  font-size: 25rpx;
+  color: #afafaf;
+}
+.BottomList .listTxt1{
+  font-size: 41.67rpx;
+  color: #333;
+  margin-top: 12rpx;
+  font-weight: bold;
+}
+.bottomLists{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* 是否在线 */
+.isZai{
+  position: absolute;
+  top: 25rpx;
+  right: 25rpx;
+  display: flex;
+  align-items: center;
+}
+.isZaiQ{
+  width: 50rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+  box-shadow: 0 0 10rpx #ccc;
+  background: #dadada;
+  margin-left: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.isZaiQ1{
+  background: #fa5f5c;
+}
+.isZaiL{
+  width: 30rpx;
+  height: 30rpx;
+  background: #fff;
+  border-radius: 50%;
+}

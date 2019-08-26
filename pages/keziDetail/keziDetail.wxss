@@ -1,0 +1,272 @@
+/* pages/keziDetail/keziDetail.wxss */
+@import "../dsluke/dsluke.wxss";
+.appBody{
+  padding-bottom: 130rpx;
+}
+.contentFixed{
+  width: 100%;
+  height: 555rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#f5090b,#fff);
+  z-index: 1;
+}
+/* 第一模块 */
+.contentTop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40rpx 0;
+  position: relative;
+  z-index: 2;
+}
+.contentTop .box{
+  width: 628rpx;
+  min-height: 10rpx;
+  padding: 0 36rpx;
+  background: #fff;
+  border-radius: 20rpx;
+}
+.dslukeLeft,.dslukeRight{
+  width: 50%;
+}
+.sjBoxTitle{
+  height: auto;
+  min-height: 108rpx;
+}
+.dslukeLeftTxt,.dslukeLeftTxt1,.dslukeLeftTxt2{
+  font-size: 24.92rpx;
+}
+.dslukeLeftTxt{
+  width: 25%;
+  color: #b7b7b7;
+}
+.dslukeLeftTxt1{
+  width: 75%;
+  color: #333;
+}
+.dslukeLeftTxt2{
+  padding: 4rpx 20rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #f5090b;
+  color: #f5090b;
+}
+.dslukeWidth{
+  width: 98%;
+  padding: 2% 1%;
+  display: flex;
+  align-items: center;
+}
+/* 第二模块 */
+.contentCenter,.contentBottom{
+  width: 628rpx;
+  padding: 0 36rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  box-shadow: 0 0 20rpx #ddd;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+.sjBtnBoxs,.detailBoxs{
+  width: 100%;
+  height: 100%;
+}
+.sjBtnBoxs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 108rpx;
+}
+.dslukeLeftTxt,.detailLeftTxt{
+  width: 25%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4rpx solid #fff;
+}
+.detailLeftTxtActive{
+  border-bottom-color: #f5090b;
+}
+.detailLeftTxt{
+  height: 104rpx;
+  font-size: 24.92rpx;
+  color: #333;
+  font-weight: bold;
+}
+.detailGD{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.detailCaozuo{
+  border: 1rpx solid #efefef;
+  margin-top: 30rpx;
+}
+.caozuoView{
+  width: 80rpx;
+  height: 80rpx;
+  background: #f4f4f4;
+  border-radius: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caozuoImg{
+  width: 46rpx;
+  position: relative;
+  top: -1rpx;
+  right: -1rpx;
+}
+.detailCZtxts{
+  margin-left: 20rpx;
+  width:82%;
+}
+.detailCZtxts1{
+  font-size: 29.26rpx;
+  color: #333;
+}
+.detailCZtxts2{
+  font-size: 24.26rpx;
+  color: #999;
+}
+.skuanDetail{
+  width: 33.33%;
+  justify-content: center;
+  flex-direction: column;
+}
+.skuanDetail .dslukeLeftTxt{
+  width: 100%;
+  text-align: center;
+}
+.skuanDetail .dslukeLeftTxt1{
+  text-align: center;
+}
+.shoukuanTxtBoxs{
+  width: 100%;
+  overflow: auto;
+}
+.shoukuanTxtBox{
+  width: 1300rpx;
+  display: flex;
+  padding: 20rpx 0;
+}
+.shoukuanTxt{
+  width: 200rpx;
+  font-size: 29.26rpx;
+  color: #666;
+  text-align: center;
+}
+.shoukuanTxt1{
+  width: 300rpx;
+}
+.shoukuanTxtBox1{
+  background: #f4f4f4;
+}
+.shoukuanTxt2{
+  width: 700rpx;
+  text-align: center;
+}
+/* 第三模块 */
+.contentBottom{
+  margin-top: 40rpx;
+  
+}
+.tuiguangTxt{
+  font-size: 29.22rpx;
+  color: #333;
+}
+/* 底部按钮 */
+.detailBottom{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: #fff;
+}
+.detailBtn{
+  width: 280rpx;
+  height: 80rpx;
+  border-radius: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26.24rpx;
+  background: #f5090b;
+  color: #fff;
+
+}
+.detailBtn:nth-of-type(1){
+  margin-right: 30rpx;
+  background: #f4f4f4;
+  color: #666;
+}
+/* tankuang */
+.detailFixed{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+.detailFixs{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  padding-bottom: 30rpx;
+}
+.detailQX{
+  width: 100%;
+  height: 90rpx;
+  font-size: 32.26rpx;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4; 
+}
+.detailbianji{
+  width: 90%;
+  min-height: 100rpx;
+  padding: 0 5% 100rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.detailbjBox{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #f4f4f4;
+}
+.detailbjImg{
+  width: 40rpx;
+  margin-right: 10rpx;
+}
+.detailbjTxt{
+  font-size: 29.26rpx;
+  color: #333;
+}
+.detailQX1{
+  width: 240rpx;
+  height: 70rpx;
+  border-radius: 70rpx;
+  font-size: 29.26rpx;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}

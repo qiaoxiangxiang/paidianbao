@@ -1,0 +1,121 @@
+<view class="appBody">
+  <view class="indexBJS"></view>
+  <view class="contentTop">
+    <image bindtap="userTap" class="userImage" src="{{imgUrl}}/index/kezi_03.png" mode="widthFix"></image>
+    <view class="userTxtBox">
+      <view class="userTxtBox1">
+        <view class="userName">冯凌凛</view>
+        <image class="WXImage" src="{{imgUrl}}/index/kezi_06.png" mode="widthFix"></image>
+      </view>
+      <view class="userJG"></view>
+      <view class="userTxtBox1">
+        <image class="PhoneImage" src="{{imgUrl}}/index/kezi_10.png" mode="widthFix"></image>
+        <view class="userPhone">13028001090</view>
+      </view>
+    </view>
+    <view wx:if="{{isZai == 0}}" class="isZai">
+      <view>离线</view>
+      <view class="isZaiQ" bindtap="isZai" data-iszai="0">
+        <view class="isZaiL"></view>
+        <view></view>
+      </view>
+    </view>
+    <view  wx:else class="isZai">
+      <view>在线</view>
+      <view class="isZaiQ isZaiQ1"  bindtap="isZai" data-iszai="1">
+        <view></view>
+        <view class="isZaiL"></view>
+      </view>
+    </view>
+  </view>
+  <view class="contentCenter">
+    <view class="contentTitle">
+      客资管理
+    </view>
+    <view class="contentListBox">
+      <navigator url="/pages/keziLB/keziLB" class="contentList">
+        <image class="listImg" src="{{imgUrl}}/index/kezi_15.png" mode="widthFix"></image>
+        <view class="listTxt">推广客资</view>
+      </navigator>
+      <navigator url="/pages/keziLB/keziLB" class="contentList">
+        <image class="listImg" src="{{imgUrl}}/index/kezi_18.png" mode="widthFix"></image>
+        <view class="listTxt">网销客资</view>
+      </navigator>
+      <navigator url="/pages/keziLB/keziLB" class="contentList">
+        <image class="listImg" src="{{imgUrl}}/index/kezi_20.png" mode="widthFix"></image>
+        <view class="listTxt">门市客资</view>
+      </navigator>
+      <navigator url="/pages/keziLB/keziLB" class="contentList">
+        <image class="listImg" src="{{imgUrl}}/index/kezi_22.png" mode="widthFix"></image>
+        <view class="listTxt">转介绍客资</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="contentCenter">
+    <view class="contentTitle">
+      客资录入
+    </view>
+    <view class="contentListBox">
+      <navigator url="/pages/dsluke/dsluke" class="contentList">
+        <image class="listImg" src="{{imgUrl}}/index/kezi_28.png" mode="widthFix"></image>
+        <view class="listTxt">电商录客</view>
+      </navigator>
+      <navigator url="/pages/dsluke/dsluke" class="contentList">
+        <image class="listImg" src="{{imgUrl}}/index/kezi_29.png" mode="widthFix"></image>
+        <view class="listTxt">自然入店</view>
+      </navigator>
+      <navigator url="/pages/dsluke/dsluke" class="contentList">
+        <image class="listImg" src="{{imgUrl}}/index/kezi_30.png" mode="widthFix"></image>
+        <view class="listTxt">转介绍入客</view>
+      </navigator>
+      <navigator url="/pages/sjCenter/sjCenter" class="contentList">
+        <image class="listImg" src="{{imgUrl}}/index/kezi_31.png" mode="widthFix"></image>
+        <view class="listTxt">数据中心</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="contentBottom">
+    <view class="bottomTitle">
+      <view>全员转介绍</view>
+      <view class="bottomTitle1">查看我的提报></view>
+    </view>
+    <view class="contentListBox">
+      <view class="contentList BottomList">
+        <view class="bottomLists">
+          <view class="listTxt">本月提报</view>
+          <view class="listTxt1">0</view>
+        </view>
+      </view>
+      <view class="contentList BottomList">
+        <view class="bottomLists">
+          <view class="listTxt">本月成交</view>
+          <view class="listTxt1">23</view>
+        </view>
+      </view>
+      <view class="contentList BottomList">
+        <view class="bottomLists">
+          <view class="listTxt">本月效量</view>
+          <view class="listTxt1">10</view>
+        </view>
+      </view>
+      <view class="contentList BottomList">
+        <view class="bottomLists">
+          <view class="listTxt">总提报量</view>
+          <view class="listTxt1">0</view>
+        </view>
+      </view>
+      <view class="contentList BottomList">
+        <view class="bottomLists">
+          <view class="listTxt">总成交量</view>
+          <view class="listTxt1">23</view>
+        </view>
+      </view>
+      <view class="contentList BottomList">
+        <view class="bottomLists">
+          <view class="listTxt">总有交量</view>
+          <view class="listTxt1">10</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

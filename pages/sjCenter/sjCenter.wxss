@@ -1,0 +1,45 @@
+.sjBoxsJG{
+  width: 100%;
+  height: 30rpx;
+}
+.sjBoxs{
+  width: 614rpx;
+  height: 383rpx;
+  padding: 0 38rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  box-shadow: 0 0 20rpx #ddd;
+  margin-bottom: 30rpx;
+}
+.sjBoxTitle{
+  width: 100%;
+  height: 102rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #efefef;
+}
+.sjBox{
+  padding-top: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sjList{
+  width: 246rpx;
+  padding: 6rpx 14rpx;
+  display: flex;
+  align-items: center;
+  border: 1rpx solid #efefef;
+  border-radius: 10rpx;
+  margin-bottom: 14rpx;
+}
+.sjImg{
+  width: 70rpx;
+  border-radius: 50%;
+}
+.sjTxt{
+  font-size: 26rpx;
+  color: #333;
+  margin-left: 18rpx;
+}

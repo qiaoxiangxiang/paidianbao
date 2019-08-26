@@ -1,0 +1,42 @@
+<view class="appBody">
+  <view class="sjBoxsJG"></view>
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">客资数据</view>
+    <view class="sjBox">
+      <navigator url="/pages/dsSJQ/dsSJQ" class="sjList">
+        <image class="sjImg" src="{{imgUrl}}/sjcenter/sjcenter_03.png" mode="widthFix"></image>
+        <view class="sjTxt">电商数据墙</view>
+      </navigator>
+      <navigator url="/pages/dsTuiG/dsTuiG" class="sjList">
+        <image class="sjImg" src="{{imgUrl}}/sjcenter/sjcenter_06.png" mode="widthFix"></image>
+        <view class="sjTxt">电商推广</view>
+      </navigator>
+      <navigator url="/pages/wxXQ/wxXQ" class="sjList">
+        <image class="sjImg" src="{{imgUrl}}/sjcenter/sjcenter_11.png" mode="widthFix"></image>
+        <view class="sjTxt">网销详情</view>
+      </navigator>
+      <navigator url="/pages/userSJ/userSJ" class="sjList">
+        <image class="sjImg" src="{{imgUrl}}/sjcenter/sjcenter_14.png" mode="widthFix"></image>
+        <view class="sjTxt">个人数据</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">转介绍数据</view>
+    <view class="sjBox">
+      <navigator url="/pages/jieshao/jieshao" class="sjList">
+        <image class="sjImg" src="{{imgUrl}}/sjcenter/sjcenter_18.png" mode="widthFix"></image>
+        <view class="sjTxt">转介绍数据墙</view>
+      </navigator>
+      <navigator url="/pages/tibaoXQ/tibaoXQ"  class="sjList">
+        <image class="sjImg" src="{{imgUrl}}/sjcenter/sjcenter_20.png" mode="widthFix"></image>
+        <view class="sjTxt">提报详情</view>
+      </navigator>
+      <navigator url="/pages/zhuanjieshaoWX/zhuanjieshaoWX" class="sjList">
+        <image class="sjImg" src="{{imgUrl}}/sjcenter/sjcenter_25.png" mode="widthFix"></image>
+        <view class="sjTxt">转介绍网销</view>
+      </navigator>
+      <view></view>
+    </view>
+  </view>
+</view>

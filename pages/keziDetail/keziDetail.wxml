@@ -1,0 +1,291 @@
+<view class='appBody'>
+  <view class='contentFixed'></view>
+  <view class='contentTop'>
+    <view class='box'>
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="dslukeLeftTxt">状态：</view>
+          <view class='dslukeLeftTxt2'>可领取</view>
+        </view>
+        <view class="dslukeRight">
+          <view class="dslukeLeftTxt">编号：</view>
+          <view class='dslukeLeftTxt1'>5014922</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="dslukeLeftTxt">推广：</view>
+          <view class='dslukeLeftTxt1'>星星</view>
+        </view>
+        <view class="dslukeRight">
+          <view class="dslukeLeftTxt">网销：</view>
+          <view class='dslukeLeftTxt1'>暂无</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">门市：</view>
+          <view class='dslukeLeftTxt1'>暂无</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">录入时间：</view>
+          <view class='dslukeLeftTxt1'>2019/08/19 10:22</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='contentCenter'>
+    <view class="sjBoxTitle">
+      <view class="sjBtnBoxs">
+        <view class="detailLeftTxt {{detailNum == 0?'detailLeftTxtActive':''}}" bindtap='btnClick' data-index="0">用户信息</view>
+        <view class="detailLeftTxt {{detailNum == 1?'detailLeftTxtActive':''}}" bindtap='btnClick' data-index="1">更多信息</view>
+        <view class="detailLeftTxt {{detailNum == 2?'detailLeftTxtActive':''}}" bindtap='btnClick' data-index="2">操作记录</view>
+        <view class="detailLeftTxt {{detailNum == 3?'detailLeftTxtActive':''}}" bindtap='btnClick' data-index="3">收款记录</view>
+      </view>
+    </view>
+    <view class="detailBoxs" wx:if="{{detailNum == 0}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">新客姓名：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">新客性别：</view>
+          <view class='dslukeLeftTxt1'>未知</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">新客电话：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">新客微信：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">新客QQ：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">新客旺旺：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">地址：</view>
+          <view class='dslukeLeftTxt1'>山西省临汾市萧县雨果乡预购村</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">意向等级：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">预算范围：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">预拍时间：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">婚期时间：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">拍摄类型：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+    </view>
+    <!-- 更多显示页面 -->
+    <view wx:if="{{detailNum == 1}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">配偶姓名：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">配偶电话：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">配偶微信：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">配偶QQ：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">老客姓名：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle sjBoxTitle1">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">老客电话：</view>
+          <view class='dslukeLeftTxt1'>15501020158</view>
+        </view>
+      </view>
+    </view>
+    <!-- 操作记录 -->
+    <view wx:if="{{detailNum == 2}}">
+      <view class="sjBoxTitle detailCaozuo">
+        <view class="dslukeWidth">
+          <view class='caozuoView'>
+            <image class='caozuoImg' src='../image/yonghu.png' mode='widthFix'></image>
+          </view>
+          <view class='detailCZtxts'>
+            <view class='detailCZtxts1'>明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明</view>
+            <view class='detailCZtxts2'>明明明明明明明明明明明明明明明明明明</view>
+          </view>
+        </view>
+      </view>
+      <view style='height: 30rpx'></view>
+    </view>
+    <!-- 收款记录 -->
+    <view wx:if="{{detailNum == 3}}">
+      <view class="sjBoxTitle sjBoxTitle1">
+        <view class="dslukeWidth skuanDetail">
+          <view class="dslukeLeftTxt">总价</view>
+          <view class='dslukeLeftTxt1'>0</view>
+        </view>
+        <view class="dslukeWidth skuanDetail">
+          <view class="dslukeLeftTxt">已付</view>
+          <view class='dslukeLeftTxt1'>0</view>
+        </view>
+        <view class="dslukeWidth skuanDetail">
+          <view class="dslukeLeftTxt">剩余</view>
+          <view class='dslukeLeftTxt1'>0</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="shoukuanTxtBoxs">
+          <view class="shoukuanTxtBox shoukuanTxtBox1">
+            <view class="shoukuanTxt">编号</view>
+            <view class='shoukuanTxt'>付款方式</view>
+            <view class='shoukuanTxt'>收款类型</view>
+            <view class='shoukuanTxt'>金额</view>
+            <view class='shoukuanTxt shoukuanTxt1'>付款时间</view>
+            <view class='shoukuanTxt'>付款人</view>
+          </view>
+          <view wx:if='false'>
+            <view class="shoukuanTxtBox">
+              <view class="shoukuanTxt shoukuanTxt2">暂无数据</view>
+            </view>
+          </view>
+          <view>
+            <view class="shoukuanTxtBox">
+              <view class="shoukuanTxt">01111011</view>
+              <view class='shoukuanTxt'>微信</view>
+              <view class='shoukuanTxt'>拍照</view>
+              <view class='shoukuanTxt'>16000</view>
+              <view class='shoukuanTxt shoukuanTxt1'>2018/09/14 12:45</view>
+              <view class='shoukuanTxt'>付款人</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 第三模块 -->
+  <view class='contentBottom'>
+    <view class="detailBoxs">
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt tuiguangTxt">推广信息</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">信息来源：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">关键词：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">咨询方式：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">广告信息：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">广告ID：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">门店选择：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+      <view class="sjBoxTitle sjBoxTitle1">
+        <view class="dslukeWidth">
+          <view class="dslukeLeftTxt">推广备注：</view>
+          <view class='dslukeLeftTxt1'>明鸣</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 底部 按钮 -->
+  <view class='detailBottom'>
+    <view class='detailBtn' bindtap='FixedBtn' data-index="0">编辑内容</view>
+    <view class='detailBtn' bindtap='FixedBtn' data-index="1">操作客资</view>
+  </view>
+  <!-- 弹框显示 -->
+  <view class='detailFixed' wx:if="{{isFixed}}" style='opacity:{{opacityNum}}'>
+    <view class='detailFixs'>
+      <view class='detailQX'>{{fixedList.name}}</view>
+      <view class='detailbianji'>
+        <view class='detailbjBox' wx:for="{{fixedList.list}}" wx:key="{{index}}">
+          <image class='detailbjImg' src='{{item.img}}' mode='widthFix'></image>
+          <view class='detailbjTxt'>{{item.name}}</view>
+        </view>
+      </view>
+      <view class='detailQX detailQX1' bindtap='detailBtnqx'>取消</view>
+    </view>
+  </view>
+</view>

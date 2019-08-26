@@ -1,0 +1,80 @@
+<view class="appBody">
+  <view class="timerLB" bindtap="timerLB">
+    <view class="timerTxt">时间类型</view>
+    <view class="timerCJ" wx:if="{{timerLBTxt?false:true}}">
+      创建时间
+      <image class="timerImage" src="{{imgUrl}}/keziLB/xia_03.png" mode="widthFix"></image>
+    </view>
+    <view wx:else class="timerCJ">
+      {{timerLBTxt}}
+    </view>
+  </view>
+  <view class="timerLBFixed" catchtap="timerLB" wx:if="{{isTimerLB}}">
+    <view class="timerLB timerLB2" wx:for="{{timerLBS}}" wx:key="{{index}}" catchtap="timerLB" data-index = "{{index}}">
+      <view class="timerTxt">{{item}}</view><view></view>
+    </view>
+  </view>
+    <!-- 日期范围 -->
+  <view class="timerLB">
+    <view class="timerTxt">日期范围</view>
+    <view class="timerTxt1">
+      {{timerFW}}
+    </view>
+  </view>
+  <view class="timerLBBox">
+    <view class="timerTxt2" bindtap="timer1" data-timernum = "0">今日</view>
+    <view class="timerTxt2" bindtap="timer1" data-timernum = "1">昨日</view>
+    <view class="timerTxt2" bindtap="timer1" data-timernum = "2">本周</view>
+    <view class="timerTxt2" bindtap="timer1" data-timernum = "3">上周</view>
+    <view class="timerTxt2" bindtap="timer1" data-timernum = "4">本月</view>
+    <view class="timerTxt2" bindtap="timer1" data-timernum = "5">上月</view>
+    <view class="timerTxt2" bindtap="timer1" data-timernum = "6">本季度</view>
+    <view class="timerTxt2" bindtap="timer1" data-timernum = "7">上季度</view>
+  </view>
+  <view class="timerLB timerLB1">
+    <view class="timerTxt">自定义</view>
+    <view class="timerCJ">
+     
+    </view>
+  </view>
+  <view class="timerLB timerLB1">
+    <view class="timerTxt">开始时间</view>
+    <picker mode = 'date' value="2019-08-19" start ="{{starTime}}"  end ="{{endTime}}" bindchange = "pickerTimeStar">
+      <view wx:if="{{ZDstarTime?true:false}}" class="timerCJ">
+        {{ZDstarTime}}
+      </view>
+      <view wx:else class="timerCJ">
+        请选择
+        <image class="timerImage" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+      </view>
+    </picker>
+  </view>
+  <view class="timerLB timerLB1" bindtap="timerZD">
+    <view class="timerTxt">结束时间</view>
+    <picker wx:if="{{ZDstarTime?true:false}}" mode = 'date' value="2019-08-19" start ="{{ZDstarTime}}"  end ="{{endTime}}" bindchange = "pickerTimeEnd">
+      <view wx:if="{{ZDendTime?true:false}}" class="timerCJ">
+        {{ZDendTime}}
+      </view>
+      <view wx:else class="timerCJ">
+        请选择
+        <image class="timerImage" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+      </view>
+    </picker>
+    <view wx:else class="timerCJ">
+        请选择
+        <image class="timerImage" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+      </view>
+  </view>
+  <view class="timerLB timerLB3 timerLB3btn">重置</view>
+  <view class="timerLB timerLB3">完成</view>
+  <view class="timerLB timerLB4">
+    <view>
+      1.时间类型筛选：录入时间，下次跟踪，预约到店时间，
+      到店时间，订单赶时间，预拍时间
+    </view>
+    <view>
+      2.可以直接选择今日，昨日，本周等时间直接匹配时间
+        范围，也可以自定义时间选择
+    </view>
+  </view>
+</view>

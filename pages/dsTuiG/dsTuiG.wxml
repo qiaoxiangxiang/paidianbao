@@ -1,0 +1,70 @@
+<view class="appBody">
+  <view class="dsTop">
+    <view class="dsTopBox">
+        <view class="dsTopBoxLeft">
+          <image class="dsTopImg1" src="{{imgUrl}}/keziLB/timer.png" mode="widthFix"></image>
+          <view class="dsTopTxtBox">
+            <view class="dsTopTxt1">起</view>
+            <view class="dsTopTxt1">止</view>
+          </view>
+          <view class="dsTopTxtBox">
+            <view class="dsTopTxt3">2019-09-15</view>
+            <view class="dsTopTxt4">2019-09-18</view>
+          </view>
+          <image class="dsTopImg2" src="{{imgUrl}}/keziLB/xia_03.png" mode="widthFix"></image>
+        </view>
+        <view class="dsTopBoxTight">
+          点击设置搜索时间
+        </view>
+    </view>
+  </view>
+  <view class="dsBottom">
+    <view class="dsBottomBox">
+      <view class="dsBottomTitle">客资排行</view>
+      <view class="dsBotBto">
+        <view class="dsBotLeft">
+          <view class="dsBotLeftTxt">渠道</view>
+          <view class="dsBotLeftTxt">合计</view>
+          <view class="dsBotLeftTxt">微博</view>
+          <view class="dsBotLeftTxt">婚纱摄影得的</view>
+        </view>
+        <view class="dsBotRight">
+          <view style="width: 720rpx">
+            <view class="dsBotBoxs">
+              <view class="dsBottxt">总客资</view>
+              <view class="dsBottxt">总客资</view>
+              <view class="dsBottxt">总客资</view>
+              <view class="dsBottxt">总客资</view>
+              <view class="dsBottxt">总客资</view>
+              <view class="dsBottxt">总客资</view>
+            </view>
+            <view class="dsBotBoxs">
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+            </view>
+            <view class="dsBotBoxs">
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+            </view>
+            <view class="dsBotBoxs">
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+              <view class="dsBottxt">0</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

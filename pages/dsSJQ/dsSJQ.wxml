@@ -1,0 +1,72 @@
+<view class="appBody">
+  <view class="dsTop">
+    <view class="dsTopBox">
+        <view class="dsTopBoxLeft">
+          <image class="dsTopImg1" src="{{imgUrl}}/keziLB/timer.png" mode="widthFix"></image>
+          <view class="dsTopTxtBox">
+            <view class="dsTopTxt1">起</view>
+            <view class="dsTopTxt1">止</view>
+          </view>
+          <view class="dsTopTxtBox">
+            <view class="dsTopTxt3">2019-09-15</view>
+            <view class="dsTopTxt4">2019-09-18</view>
+          </view>
+          <image class="dsTopImg2" src="{{imgUrl}}/keziLB/xia_03.png" mode="widthFix"></image>
+        </view>
+        <view class="dsTopBoxTight">
+          点击设置搜索时间
+        </view>
+    </view>
+  </view>
+  <view class="dsLXBoxs">
+    <view class="dsLXBox">
+      <picker mode="selector">
+        <view class="dsLXTxtBox">
+          <view class="dsTopBoxTight">类型</view>
+          <image class="dsTopImg2" src="{{imgUrl}}/keziLB/xia_03.png" mode="widthFix"></image>
+        </view>
+      </picker>
+      <picker mode="selector">
+        <view class="dsLXTxtBox">
+          <view class="dsTopBoxTight">渠道/来源</view>
+          <image class="dsTopImg2" src="{{imgUrl}}/keziLB/xia_03.png" mode="widthFix"></image>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="YMDBox YMDBox1">
+    <view class="YMDBoxBtn" bindtap="YMDBoxBtn" data-num = "0">
+      <view class="YMDBoxBtnTxt {{YMDBoxBtnNum == 0?'YMDBoxBtnTxtActive':''}}">电商数据墙</view>
+    </view>
+    <view class="YMDBoxBtn" bindtap="YMDBoxBtn" data-num = "1">
+      <view class="YMDBoxBtnTxt {{YMDBoxBtnNum == 1?'YMDBoxBtnTxtActive':''}}">网销转介绍</view>
+    </view>
+    <view class="YMDBoxBtn" bindtap="YMDBoxBtn" data-num = "2">
+      <view class="YMDBoxBtnTxt {{YMDBoxBtnNum == 2?'YMDBoxBtnTxtActive':''}}">纯投放</view>
+    </view>
+  </view>
+  <view class="YMDBoxs" wx:if="{{YMDBoxBtnNum == 0}}">
+    <view class="YMDBox" wx:for = "{{dsList}}" wx:for-item="items" wx:for-index="indexs" wx:key="{{indexs}}">
+      <view class="YMDList"  wx:for = "{{items}}" wx:key="{{index}}">
+        <view class="YMDListTxt1">{{item.num}}</view>
+        <view class="YMDListTxt2">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="YMDBoxs" wx:if="{{YMDBoxBtnNum == 1}}">
+    <view class="YMDBox" wx:for = "{{dsList1}}" wx:for-item="items" wx:for-index="indexs" wx:key="{{indexs}}">
+      <view class="YMDList"  wx:for = "{{items}}" wx:key="{{index}}">
+        <view class="YMDListTxt1">{{item.num}}</view>
+        <view class="YMDListTxt2">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="YMDBoxs" wx:if="{{YMDBoxBtnNum == 2}}">
+    <view class="YMDBox" wx:for = "{{dsList2}}" wx:for-item="items" wx:for-index="indexs" wx:key="{{indexs}}">
+      <view class="YMDList"  wx:for = "{{items}}" wx:key="{{index}}">
+        <view class="YMDListTxt1">{{item.num}}</view>
+        <view class="YMDListTxt2">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>

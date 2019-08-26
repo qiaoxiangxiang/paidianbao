@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/tuiGinfo/tuiGinfo",
+    "pages/keziDetail/keziDetail",
+    "pages/dsluke/dsluke",
+    
+    "pages/timer/timer",
+    "pages/index/index",
+    "pages/zhuanjieshaoWX/zhuanjieshaoWX",
+    "pages/tibaoXQ/tibaoXQ",
+    "pages/userSJ/userSJ",
+    "pages/wxXQ/wxXQ",
+    "pages/dsSJQ/dsSJQ",
+    "pages/dsTuiG/dsTuiG",
+    "pages/sjCenter/sjCenter",
+    "pages/jieshao/jieshao",
+    "pages/keziLB/keziLB",
+    "pages/denglu/denglu",
+    "pages/userInfo/userInfo",
+    "pages/common/common",
+    "pages/YHinfo/YHinfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "客资",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

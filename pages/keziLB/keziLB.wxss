@@ -1,0 +1,155 @@
+.appBody{
+  position: relative;
+  background: #f3f3f3;
+  min-height: 100%;
+}
+.top{
+  height: 111.11rpx;
+  box-shadow: 0 1rpx 4rpx #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #fff;
+}
+.topK{
+  width: 100%;
+  height: 111.11rpx;
+}
+.shaiXuan{
+  width: 172.22rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shaixuanImg{
+  width: 22.22rpx;
+}
+.chaxunImg{
+  width: 27.77rpx;
+}
+.shaiXuanTxt{
+  font-size: 23.611rpx;
+  color: #333;
+}
+.chaxunTxt{
+  font-size: 20.833rpx;
+  color: #666;
+}
+.dateTime{
+  width: 181.944rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sousuo{
+  width: 368.055rpx;
+  height: 40.277rpx;
+  padding-right: 27.77rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sousuoBox{
+  width: 277.78rpx;
+  height: 100%;
+  padding: 0 20.83rpx;
+  background: #eee;
+  border-radius: 33.33rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sousuoImg{
+  width: 25.694rpx;
+}
+.JiaImg{
+  width: 40.277rpx;
+}
+.sousuoInp{
+  width: 240rpx;
+  font-size: 16.666rpx;
+  color: #999999;
+}
+/* 主体 */
+.content{
+  position: relative;
+  min-height: 100rpx;
+  display: flex;
+}
+/* 左侧 */
+.contentLeftK{
+  width: 152.777rpx;
+  height: 10rpx;
+}
+.contentLeft{
+  width: 152.777rpx;
+  background: #eaeaea;
+  margin-top: 12rpx;
+  position: fixed;
+  left: 0;
+  top: 110rpx;
+}
+.contentLlist{
+  width: 100%;
+  height: 121.527rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2rpx solid #ddd;
+}
+.contentLlist:nth-last-of-type(1){
+  border-bottom: none;
+}
+.LlistImg{
+  width: 43.055rpx;
+  border-radius: 50%;
+}
+.LlistTxt{
+  font-size: 23.611rpx;
+  color: #333;
+}
+.LlistNum{
+  font-size: 20.833rpx;
+  color: #666;
+}
+/* 右侧 */
+.contentRight{
+  width: 595.833rpx;
+  margin-top: 20.361rpx;
+}
+.contentRlist{
+  width: 513.88rpx;
+  height: 354.166rpx;
+  padding: 0 27.77rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  box-shadow: 0 0 20rpx #ddd;
+  margin-left: 17.5rpx;
+  margin-bottom: 17.361rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 22rpx;
+}
+.contentRlist:nth-last-of-type(1){
+  margin-bottom: 0rpx;
+}
+.RlistBox{
+  width: 50%;
+  margin-top: 14.833rpx;
+  display: flex;
+  font-size: 20.833rpx;
+  height: 24.305rpx;
+}
+.RlistBoxLeft{
+  color: #999;
+}
+.RlistBoxRight{
+  color: #333;
+}

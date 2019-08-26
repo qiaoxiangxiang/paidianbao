@@ -1,0 +1,146 @@
+/* pages/dsTuiG/dsTuiG.wxss */
+.dsTop{
+  width: 100%;
+  height: 110rpx;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dsTopBox{
+  width: 680rpx;
+  height: 90rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background: #f4f4f4;
+  padding: 0 20rpx;
+  border-radius: 10rpx;
+}
+.dsTopBoxLeft,.dsTopTxtBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dsTopBoxTight{
+  font-size: 25.82rpx;
+  color: #aaaeb7;
+}
+.dsTopTxtBox{
+  flex-direction: column;
+  margin-left: 10rpx;
+}
+.dsTopTxt1,.dsTopTxt3,.dsTopTxt4{
+  font-size: 21.27rpx;
+  color: #ababac;
+}
+.dsTopTxt3,.dsTopTxt4{
+  color: #333;
+}
+.dsTopTxt4{
+  margin-top: 10rpx;
+}
+.dsTopImg1{
+  width: 30rpx;
+}
+.dsTopImg2{
+  width: 16rpx;
+  margin-left: 10rpx;
+}
+/* content */
+.YMD{
+  width: 690rpx;
+  height: 467rpx;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.YMD:nth-last-of-type(1){
+  margin-bottom: 0;
+}
+.YMDTxt{
+  height: 68rpx;
+  font-size:28.96rpx;
+  display:flex;
+  align-items: center;
+  width: 634rpx;
+  padding: 0 28rpx;
+  border-bottom: 2rpx solid #f4f4f4;
+}
+.YMDBox{
+  width: 702rpx;
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  border-radius: 10rpx;
+  margin: 20rpx auto 0;
+}
+.YMDBox1{
+  height: auto;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.YMDBoxs{
+  padding-bottom: 40rpx;
+}
+.YMDBoxBtn{
+  width: 33.33%;
+  font-size: 29.96rpx;
+  color: #636878;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.YMDBoxBtnTxt{
+  padding: 0 10rpx 10rpx;
+  border-bottom: 2rpx solid rgba(0,0,0,0);
+}
+.YMDBoxBtnTxtActive{
+  border-bottom-color: red;
+}
+.YMDList{
+  width: 150rpx;
+  height: 70rpx;
+  padding: 0 12rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25.63rpx;
+  color: #636878;
+  border-left: 2rpx solid #dee0e9;
+}
+.YMDList:nth-of-type(1){
+  border: none;
+}
+.YMDListTxt1{
+  position: relative;
+  top: -10rpx;
+}
+.YMDListTxt2{
+  text-align: center;
+}
+.YMDList1{
+  border: none;
+}
+.dsLXTxtBox,.dsLXBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dsLXBox{
+  width: 680rpx;
+  padding: 20rpx 35rpx;
+  justify-content: flex-end;
+  border-bottom: 1rpx solid #eee;
+}
+.dsLXTxtBox .dsTopBoxTight{
+  color: #333;
+  margin-right: 6rpx;
+  margin-left: 40rpx;
+}

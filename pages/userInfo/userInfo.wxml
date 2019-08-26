@@ -1,0 +1,39 @@
+<view class="appBody">
+  <image class="userInfoBJ" src="{{imgUrl}}/denglu/userInfo_03.png" mode="widthFix"></image>
+  <view class="contentTop">
+    <image class="userImage" src="{{imgUrl}}/index/kezi_03.png" mode="widthFix"></image>
+    <view class="userName">冯凌凛</view>
+  </view>
+  <view class="userInfoBox">
+    <view class="userInfList">
+      <view class="title">拍店宝</view>
+      <image class="jiantou" src = "{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+    </view>
+    <view class="userInfList">
+      <view class="title">岗位</view>
+      <view class="title">管理一组</view>
+    </view>
+    <view class="userInfList">
+      <view class="title">重置密码</view>
+      <image class="jiantou" src = "{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+    </view>
+    <view class="userInfList">
+      <view class="userInfoL">
+        <view class="title">联系电话</view>
+        <view class="titleRZ">点击重新认证</view>
+      </view>
+      <view class="title">13025895478</view>
+    </view>
+  </view>
+  <view class="userInfoBox userInfoBox1">
+    <view class="userInfList">
+      <view class="title">帮助中心</view>
+      <image class="jiantou" src = "{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+    </view>
+    <view class="userInfList">
+      <view class="title">关于我们</view>
+      <image class="jiantou" src = "{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="userInfoBottom">由 拍店宝 提供技术支持（v1）</view>
+</view>

@@ -1,0 +1,267 @@
+<view class="appBody">
+  <view class="sjBoxsJG"></view>
+  <!-- 客户信息 -->
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        用户信息
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        新客姓名
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入新客姓名"></input>
+      </view>
+    </view>
+    <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          新客性别
+        </view>
+        <view class="dslukeRight">
+          <view>
+            {{xingbie[xingbieNum]}}
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <view class="sjBoxTitle" bindtap="tibaoTap">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        新客电话
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入电话"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        新客微信
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入微信号"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        新客QQ
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入QQ"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        新客旺旺
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入QQ"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle" bindtap='cityJs'>
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        新客地址
+      </view>
+      <view class="dslukeRight">
+        <view style='font-size: 24.26rpx;'>
+          {{dizhiVal}}
+        </view>
+        <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+      </view>
+    </view>
+    <picker mode='selector' range="{{paishe}}" value="1">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active">*</view>
+          意向等级
+        </view>
+        <view class="dslukeRight">
+          <view>
+            
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{paishe}}" value="1">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active">*</view>
+          预算范围
+        </view>
+        <view class="dslukeRight">
+          <view>
+            
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{paishe}}" value="1">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active">*</view>
+          预拍时间
+        </view>
+        <view class="dslukeRight">
+          <view>
+            
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{paishe}}" value="1">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active">*</view>
+          婚期时间
+        </view>
+        <view class="dslukeRight">
+          <view>
+            
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{paishe}}" value="1">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active">*</view>
+          拍摄类型
+        </view>
+        <view class="dslukeRight">
+          <view>
+            
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode='selector' range="{{paishe}}" value="1">
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active">*</view>
+          录入时间
+        </view>
+        <view class="dslukeRight">
+          <view>
+            
+          </view>
+          <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        其他信息
+      </view>
+      <view></view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        配偶姓名
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入新客姓名"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        配偶电话
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入新客姓名"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        配偶微信
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入新客姓名"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        配偶QQ
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入新客姓名"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        老客姓名
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入新客姓名"></input>
+      </view>
+    </view>
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class="active"></view>
+        老客电话
+      </view>
+      <view class="dslukeRight">
+        <input class="dsxinkeName" placeholder="请输入新客姓名"></input>
+      </view>
+    </view>
+  </view>
+  <!-- 提报人选择 -->
+  <view class='cityBJ' wx:if="{{istibao}}">
+    <view class='cityTboxs'>
+      <view class='cityTopBtn'>
+        <view class='cityTopBtn2' catchtap='cityQuxiao'>取消</view>
+        <view class='cityTopTitle'>选择地址</view>
+        <view class='cityTopBtn1' catchtap='cityQueding'>确定</view>
+      </view>
+      <picker-view class='cityTbox'indicator-style="height: 24.194rpx;"  value="{{value}}" bindchange="bindChange">
+        <picker-view-column>
+          <view  wx:for="{{tibaoYI}}" wx:for-index="key"  wx:for-item="value" wx:key="{{key}}" class='cityDizhi'>{{value}}</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view  wx:for="{{tibaoEr[tibaoErNum[0]]}}" wx:for-index="key"  wx:for-item="value" wx:key="{{key}}"  class='cityDizhi'>{{value}}</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </view>
+  <!-- 地址选择 -->
+  <view class='cityBJ' wx:if="{{isCity}}">
+    <view class='cityTboxs'>
+      <view class='cityTopBtn'>
+        <view class='cityTopBtn2' catchtap='cityQuxiaos'>取消</view>
+        <view class='cityTopTitle'>选择地址</view>
+        <view class='cityTopBtn1' catchtap='cityQuedings'>确定</view>
+      </view>
+      <picker-view class='cityTbox'indicator-style="height: 24.194rpx;"  value="{{value}}" bindchange="cityChange">
+        <picker-view-column>
+          <view  wx:for="{{sheng}}" wx:for-index="key"  wx:for-item="value" wx:key="{{key}}" class='cityDizhi'>{{value}}</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view  wx:for="{{shi}}" wx:for-index="key"  wx:for-item="value" wx:key="{{key}}"  class='cityDizhi'>{{value}}</view>
+        </picker-view-column>
+        <picker-view-column> 
+          <view wx:for="{{qu}}" wx:for-index="key"  wx:for-item="value" wx:key="{{key}}"  class='cityDizhi'>{{value}}</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </view>
+</view>
