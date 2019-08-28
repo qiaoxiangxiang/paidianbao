@@ -1,0 +1,77 @@
+/* pages/WXZZ/WXZZ.wxss */
+@import "../dsluke/dsluke.wxss";
+.sjBoxs{
+  width: 690rpx;
+  padding-left: 0;
+  padding-right: 0;
+}
+.dslukeLeft1{
+  margin-left: 38rpx;
+  color: #333;
+}
+.wxXZBtnBox{
+  border-bottom: none;
+}
+.zhuanyiTitle{
+  width: 94%;
+  padding: 20rpx 3%;
+  font-size: 26.26rpx;
+  color: #f5090b;
+  background: rgba(255,255,0,.2);
+  opacity: .8;
+}
+.sjBoxTitle{
+  height: 80rpx;
+}
+.deleteTxt{
+  font-size: 26.26rpx;
+  color: #333;
+  text-align: center;
+  margin: 20rpx 0 30rpx;
+}
+.deleteImg{
+  width: 100rpx;
+  display: block;
+  margin: 0 auto;
+}
+.deleteTarea{
+  width: 580rpx;
+  padding: 20rpx 17rpx;
+  height: 120rpx;
+  margin: 0 auto;
+  border: 1rpx solid #f4f4f4;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  font-size: 24.29rpx;
+  color: #666;
+}
+/* 底部按钮 */
+.detailBottom{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: #fff;
+}
+.detailBtn{
+  width: 280rpx;
+  height: 80rpx;
+  border-radius: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26.24rpx;
+  background: #f5090b;
+  color: #fff;
+
+}
+.detailBtn:nth-of-type(1){
+  margin-right: 30rpx;
+  background: #f4f4f4;
+  color: #666;
+}

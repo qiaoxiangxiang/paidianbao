@@ -1,4 +1,5 @@
 /* pages/YHinfo/YHinfo.wxss */
 @import "../dsluke/dsluke.wxss";
+@import "../zhuanyi/zhuanyi.wxss";
 
 

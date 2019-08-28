@@ -12,19 +12,19 @@ Page({
     fixedList1:{
       "name":"操作客资",
       'list':[
-        { "img": "../image/yonghu.png", "name": "编辑用户信息", "url": "" },
-        { "img": "../image/kezidetail/fenxiang.png", "name": "编辑推广信息", "url": "" },
-        { "img": "../image/kezidetail/yzgl.png", "name": "编辑主管纠错", "url": "" },
+        { "img": "../image/yonghu.png", "name": "编辑用户信息", "url": "/pages/YHinfo/YHinfo" },
+        { "img": "../image/kezidetail/fenxiang.png", "name": "编辑推广信息", "url": "/pages/tuiGinfo/tuiGinfo?index=1" },
+        { "img": "../image/kezidetail/yzgl.png", "name": "编辑主管纠错", "url": "/pages/tuiGinfo/tuiGinfo?index=2" },
       ]
     },
     fixedList2: {
       "name": "操作客资",
       'list': [
-        { "img": "../image/kezidetail/wxzz.png", "name": "网销追踪", "url": "" },
-        { "img": "../image/kezidetail/msjd.png", "name": "门市接单", "url": "" },
-        { "img": "../image/kezidetail/kzzy.png", "name": "客资转移", "url": "" },
-        { "img": "../image/kezidetail/kzfp.png", "name": "客资分配", "url": "" },
-        { "img": "../image/kezidetail/kzsc.png", "name": "客资删除", "url": "" },
+        { "img": "../image/kezidetail/wxzz.png", "name": "网销追踪", "url": "/pages/WXZZ/WXZZ" },
+        { "img": "../image/kezidetail/msjd.png", "name": "门市接单", "url": "/pages/msJD/msJD" },
+        { "img": "../image/kezidetail/kzzy.png", "name": "客资转移", "url": "/pages/zhuanyi/zhuanyi?index=1" },
+        { "img": "../image/kezidetail/kzfp.png", "name": "客资分配", "url": "/pages/zhuanyi/zhuanyi?index=2" },
+        { "img": "../image/kezidetail/kzsc.png", "name": "客资删除", "url": "/pages/deleteKZ/deleteKZ" },
       ]
     },
     fixedList:{},

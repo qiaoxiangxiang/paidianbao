@@ -1,2 +1,21 @@
-<!--pages/common/common.wxml-->
-<text>pages/common/common.wxml</text>
+<template name="bottomBtn">
+  <view class='detailBottom' style='position:relative;'>
+    <view class='detailBtn' bindtap='FixedBtn' data-index="0">取消</view>
+    <view class='detailBtn' bindtap='FixedBtn' data-index="1">确定保存</view>
+  </view>
+</template>
+
+<!-- 授权按钮 -->
+<template name="shouquan">
+  <view class='userInfo_box'>
+    <view class='userInfo_content'>
+      <view class='userInfo_txt'>
+        袋鼠医学
+      </view>
+      <view class='userInfo_tishi'>
+        授权后会带来更好的体验
+      </view>
+      <button class='userInfo_btn' type='primary' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" lang="zh_CN" >请授权</button>
+    </view>
+  </view>
+</template>

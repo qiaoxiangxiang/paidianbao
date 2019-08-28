@@ -1,0 +1,23 @@
+<view class="appBody" style="padding-bottom: 0">
+  <!-- 模块头部显示 -->
+  <view class='sjBoxsJG'></view>
+  <!-- 模块一 -->
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        <view class='dslukeLeft1'>删除客资</view>
+      </view>
+      <view></view>
+    </view>
+    <view >
+      <view class='deleteTxt'>确认删除选择客资？</view>
+      <image src='../image/delete.png' class='deleteImg' mode='widthFix'></image>
+    </view>
+    <textarea bindinput='deleteTxt' maxlength="150" class='deleteTarea' placeholder='删除原因'></textarea>
+  </view>
+  
+  <!-- 底部 按钮 -->
+  <import src='/pages/common/common.wxml'/>
+  <template is="bottomBtn"></template>
+</view>
+

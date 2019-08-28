@@ -1,16 +1,16 @@
 <view class="appBody">
   <view class="indexBJS"></view>
   <view class="contentTop">
-    <image bindtap="userTap" class="userImage" src="{{imgUrl}}/index/kezi_03.png" mode="widthFix"></image>
+    <image bindtap="userTap" class="userImage" src="{{userInfoS.avatarUrl}}" mode="widthFix"></image>
     <view class="userTxtBox">
       <view class="userTxtBox1">
-        <view class="userName">冯凌凛</view>
+        <view class="userName">{{userInfoS.nickName}}</view>
         <image class="WXImage" src="{{imgUrl}}/index/kezi_06.png" mode="widthFix"></image>
       </view>
       <view class="userJG"></view>
       <view class="userTxtBox1">
         <image class="PhoneImage" src="{{imgUrl}}/index/kezi_10.png" mode="widthFix"></image>
-        <view class="userPhone">13028001090</view>
+        <view class="userPhone">{{userInfo.username}}</view>
       </view>
     </view>
     <view wx:if="{{isZai == 0}}" class="isZai">
@@ -45,7 +45,7 @@
         <image class="listImg" src="{{imgUrl}}/index/kezi_20.png" mode="widthFix"></image>
         <view class="listTxt">门市客资</view>
       </navigator>
-      <navigator url="/pages/keziLB/keziLB" class="contentList">
+      <navigator url="/pages/keziLB/keziLB?canshu=zjsyy" class="contentList">
         <image class="listImg" src="{{imgUrl}}/index/kezi_22.png" mode="widthFix"></image>
         <view class="listTxt">转介绍客资</view>
       </navigator>
@@ -118,4 +118,7 @@
       </view>
     </view>
   </view>
+  <!-- shouquan -->
+  <import src='../common/common.wxml' />
+  <template is="shouquan" wx:if="{{!isShouquan}}" />
 </view>

@@ -280,10 +280,10 @@
     <view class='detailFixs'>
       <view class='detailQX'>{{fixedList.name}}</view>
       <view class='detailbianji'>
-        <view class='detailbjBox' wx:for="{{fixedList.list}}" wx:key="{{index}}">
+        <navigator url='{{item.url}}' class='detailbjBox' wx:for="{{fixedList.list}}" wx:key="{{index}}">
           <image class='detailbjImg' src='{{item.img}}' mode='widthFix'></image>
           <view class='detailbjTxt'>{{item.name}}</view>
-        </view>
+        </navigator>
       </view>
       <view class='detailQX detailQX1' bindtap='detailBtnqx'>取消</view>
     </view>

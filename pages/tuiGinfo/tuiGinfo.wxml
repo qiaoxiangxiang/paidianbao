@@ -1,11 +1,6 @@
-<view class='appBody'>
+<view class='appBody' style="padding-bottom: 0">
   <!-- 主管纠错 -->
-  <view class="sjBoxs">
-    <view class="sjBoxTitle">
-      <view class="dslukeLeft">
-        用户信息
-      </view>
-    </view>
+  <view class="sjBoxs" wx:if="{{index==2}}">
     <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
       <view class="sjBoxTitle">
         <view class="dslukeLeft">
@@ -147,7 +142,7 @@
     </view>
   </view>
   <!-- 推广模块 -->
-  <view class='contentBottom'>
+  <view class='contentBottom' wx:if="{{index==1}}">
     <view class="detailBoxs">
       <view class="sjBoxTitle">
         <view class="dslukeWidth">
@@ -218,8 +213,6 @@
     </view>
   </view>
   <!-- 底部 按钮 -->
-  <view class='detailBottom'>
-    <view class='detailBtn' bindtap='FixedBtn' data-index="0">取消</view>
-    <view class='detailBtn' bindtap='FixedBtn' data-index="1">确定保存</view>
-  </view>
+  <import src='/pages/common/common.wxml'/>
+  <template is="bottomBtn"></template>
 </view>

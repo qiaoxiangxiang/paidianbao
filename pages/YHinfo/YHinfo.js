@@ -35,6 +35,17 @@ Page({
   onLoad: function (options) {
 
   },
+  FixedBtn: function (e) {
+    var index = common.eventdata(e).index;
+    if (index == 0) {
+      //返回
+      wx.navigateBack({
+        delta: 1
+      })
+    } else {
+
+    }
+  },
   tibaoTap: function () {
     this.setData({
       istibao: true,

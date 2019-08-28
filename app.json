@@ -1,11 +1,19 @@
 {
   "pages": [
-    "pages/tuiGinfo/tuiGinfo",
+    "pages/index/index",
+    
+    "pages/denglu/denglu",
+    
+    
+    
+    "pages/deleteKZ/deleteKZ",
+    "pages/zhuanyi/zhuanyi",
+    "pages/msJD/msJD",
+    "pages/WXZZ/WXZZ",
     "pages/keziDetail/keziDetail",
     "pages/dsluke/dsluke",
-    
+    "pages/tuiGinfo/tuiGinfo",
     "pages/timer/timer",
-    "pages/index/index",
     "pages/zhuanjieshaoWX/zhuanjieshaoWX",
     "pages/tibaoXQ/tibaoXQ",
     "pages/userSJ/userSJ",
@@ -15,10 +23,11 @@
     "pages/sjCenter/sjCenter",
     "pages/jieshao/jieshao",
     "pages/keziLB/keziLB",
-    "pages/denglu/denglu",
+    
     "pages/userInfo/userInfo",
     "pages/common/common",
     "pages/YHinfo/YHinfo"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

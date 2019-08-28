@@ -1,0 +1,73 @@
+<view class="appBody" wx:if="{{iszhuanyi == 1}}"  style="padding-bottom: 0">
+  <!-- 模块头部显示 -->
+  <view class='zhuanyiTitle'>
+    此功能是转移给其他推广或者转移给其它网销，转移给其他门市
+  </view>
+  <view class='sjBoxsJG'></view>
+  <!-- 模块一 -->
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        转移给电商推广
+      </view>
+      <view></view>
+    </view>
+    <view >
+      <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+        <view class="sjBoxTitle sjBoxTitle1">
+          <view class="dslukeLeft">
+            <view class="active"></view>
+            转移给：
+          </view>
+          <view class="dslukeRight">
+            <view>
+              {{xingbie[xingbieNum]}}
+            </view>
+            <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+          </view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  
+  <!-- 底部 按钮 -->
+  <import src='/pages/common/common.wxml'/>
+  <template is="bottomBtn"></template>
+</view>
+<!-- 客资分配 -->
+<view class="appBody"  wx:if="{{iszhuanyi == 2}}"  style="padding-bottom: 0">
+  <!-- 模块头部显示 -->
+  <view class='zhuanyiTitle'>
+    此功能是分配给网销的
+  </view>
+  <view class='sjBoxsJG'></view>
+  <!-- 模块一 -->
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        分配客资
+      </view>
+      <view></view>
+    </view>
+    <view >
+      <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+        <view class="sjBoxTitle sjBoxTitle1">
+          <view class="dslukeLeft">
+            <view class="active"></view>
+            分配给：
+          </view>
+          <view class="dslukeRight">
+            <view>
+              {{xingbie[xingbieNum]}}
+            </view>
+            <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+          </view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  
+  <!-- 底部 按钮 -->
+  <import src='/pages/common/common.wxml'/>
+  <template is="bottomBtn"></template>
+</view>

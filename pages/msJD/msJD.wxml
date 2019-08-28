@@ -1,0 +1,208 @@
+<view class="appBody" style="padding-bottom: 0">
+  <!-- 模块头部显示 -->
+  <view class='sjBoxsJG'></view>
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        选择情况
+      </view>
+      <view></view>
+    </view>
+    <view class="sjBoxTitle wxXZBtnBox">
+      <view></view>
+      <view class="dslukeLeft wxXZBtn {{wxzzNum == 0?'wxXZBtnActive':''}}" bindtap='wxxzBtn' data-index="0">
+        进店未定
+      </view>
+      <view class="dslukeLeft wxXZBtn {{wxzzNum == 1?'wxXZBtnActive':''}}" bindtap='wxxzBtn' data-index="1">
+        有效单
+      </view>
+      <view></view>
+    </view>
+  </view>
+  <!-- 模块 -->
+
+  <!-- 模块一 -->
+  <view class="sjBoxs" wx:if="{{wxzzNum == 0}}">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        进店未定
+      </view>
+      <view></view>
+    </view>
+    <view >
+      <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+        <view class="sjBoxTitle">
+          <view class="dslukeLeft">
+            <view class="active"></view>
+            门店和门市：
+          </view>
+          <view class="dslukeRight">
+            <view>
+              {{xingbie[xingbieNum]}}
+            </view>
+            <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+          </view>
+        </view>
+      </picker>
+      <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+        <view class="sjBoxTitle">
+          <view class="dslukeLeft">
+            <view class="active"></view>
+            到店时间：
+          </view>
+          <view class="dslukeRight">
+            <view>
+              {{xingbie[xingbieNum]}}
+            </view>
+            <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+          </view>
+        </view>
+      </picker>
+      <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+        <view class="sjBoxTitle">
+          <view class="dslukeLeft">
+            <view class="active"></view>
+            流失原因：
+          </view>
+          <view class="dslukeRight">
+            <view>
+              {{xingbie[xingbieNum]}}
+            </view>
+            <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+          </view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <!-- 模块二 -->
+  <view class="sjBoxs" wx:if="{{wxzzNum == 1}}">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        在效单
+      </view>
+      <view></view>
+    </view>
+    <view >
+      <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+        <view class="sjBoxTitle">
+          <view class="dslukeLeft">
+            <view class="active"></view>
+            门店门市：
+          </view>
+          <view class="dslukeRight">
+            <view>
+              {{xingbie[xingbieNum]}}
+            </view>
+            <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+          </view>
+        </view>
+      </picker>
+      <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+        <view class="sjBoxTitle">
+          <view class="dslukeLeft">
+            <view class="active"></view>
+            订单时间：
+          </view>
+          <view class="dslukeRight">
+            <view>
+              {{xingbie[xingbieNum]}}
+            </view>
+            <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+          </view>
+        </view>
+      </picker>
+      <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+        <view class="sjBoxTitle">
+          <view class="dslukeLeft">
+            <view class="active"></view>
+            付款方式：
+          </view>
+          <view class="dslukeRight">
+            <view>
+              {{xingbie[xingbieNum]}}
+            </view>
+            <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+          </view>
+        </view>
+      </picker>
+      <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+        <view class="sjBoxTitle">
+          <view class="dslukeLeft">
+            <view class="active"></view>
+            订单类型：
+          </view>
+          <view class="dslukeRight">
+            <view>
+              {{xingbie[xingbieNum]}}
+            </view>
+            <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+          </view>
+        </view>
+      </picker>
+      <picker mode='selector' range="{{xingbie}}" value="{{xingbieNum}}">
+        <view class="sjBoxTitle">
+          <view class="dslukeLeft">
+            <view class="active"></view>
+            收款人员：
+          </view>
+          <view class="dslukeRight">
+            <view>
+              {{xingbie[xingbieNum]}}
+            </view>
+            <image class="dslukeImg" src="{{imgUrl}}/denglu/jiantou_06.png" mode="widthFix"></image>
+          </view>
+        </view>
+      </picker>
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          合同编号：
+        </view>
+        <view class="dslukeRight">
+          <input class="dsxinkeName" placeholder="请输入合同编号"></input>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          套餐金额：
+        </view>
+        <view class="dslukeRight">
+          <input class="dsxinkeName" placeholder="请输入套餐金额"></input>
+        </view>
+      </view>
+      <view class="sjBoxTitle">
+        <view class="dslukeLeft">
+          <view class="active"></view>
+          收款金额：
+        </view>
+        <view class="dslukeRight">
+          <input class="dsxinkeName" placeholder="请输入收款金额"></input>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 底部信息 -->
+  <view class='sjBoxsJG'></view>
+  <view class="sjBoxs">
+    <view class="sjBoxTitle">
+      <view class="dslukeLeft">
+        备注内容或图片
+      </view>
+      <view></view>
+    </view>
+    <view class="sjBoxTitle sjBoxTitle2">
+      <textarea class="dslukeTxt" placeholder="请输入新客姓名">
+      
+      </textarea>
+    </view>
+    <view class="sjBoxTitle sjBoxTitle3">
+      <!-- <image class="sjBoxImg" src="{{imgUrl}}/denglu/dengluBJ.png" mode="widthFix"></image>
+      <image class="sjBoxImg" src="{{imgUrl}}/denglu/shouji.jpg" mode="widthFix"></image> -->
+      <view class="sjBoxTJ sjBoxImg">+</view>
+    </view>
+  </view>
+  <!-- 底部 按钮 -->
+  <import src='/pages/common/common.wxml'/>
+  <template is="bottomBtn"></template>
+</view>

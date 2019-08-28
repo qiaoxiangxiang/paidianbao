@@ -8,13 +8,13 @@
       <view class="DengLuInpBox">
         <view class="DengLuInp">
           <image class="InpImg" src="{{imgUrl}}/denglu/denglu_03.png" mode="widthFix"></image>
-          <input class="InpTxt" placeholder="手机号"></input>
+          <input bindinput='phone' class="InpTxt" placeholder="手机号" type='text'></input>
         </view>
         <view class="DengLuInp DengLuInp1">
           <image class="InpImg" src="{{imgUrl}}/denglu/denglu_06.png" mode="widthFix"></image>
-          <input class="InpTxt" placeholder="密码"></input>
+          <input bindinput='password' class="InpTxt" placeholder="密码" type='password'></input>
         </view>
-        <view class="DengLuBtn">
+        <view class="DengLuBtn" bindtap='DLBtn'>
           登  录
         </view>
         <view class="DengLuBottom">

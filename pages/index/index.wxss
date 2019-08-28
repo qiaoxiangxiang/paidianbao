@@ -42,6 +42,7 @@
   width: 115rpx;
   margin-left: 50rpx;
   margin-right: 42rpx;
+  border-radius: 50%;
 }
 .userTxtBox{
   display: flex;
@@ -171,4 +172,52 @@
   height: 30rpx;
   background: #fff;
   border-radius: 50%;
+}
+
+/* shouquan */
+.userInfo_box{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  top:0;
+  left:0;
+  z-index:20;
+
+}
+.userInfo_content{
+  position:absolute;
+  top:47%;
+  left:50%;
+  width:510.7rpx;
+  height:400.7rpx;
+  margin:-200.35rpx 0 0 -235.35rpx;
+  background:#fff;
+  border-radius:9.08rpx;
+}
+.userInfo_btn{
+  width:318.84rpx;
+  height:91.78rpx;
+  line-height:91.7855/1.656rpx;
+  margin-top:82.212rpx;
+  color:#fff;
+  background:#0ab30c;
+  border-color:#0ab30c;
+}
+.userInfo_txt{
+  width:100%;
+  margin:0 auto;
+  line-height:93.5rpx;
+  font-size:33.21rpx;
+  border-bottom:1.08rpx solid #eaeaea;
+  text-align:center;
+  color:-335.35rpx;
+}
+.userInfo_tishi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  color: #333;
+  padding-top: 24rpx;
 }

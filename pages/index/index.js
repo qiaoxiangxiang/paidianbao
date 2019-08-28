@@ -8,30 +8,61 @@ Page({
   data: {
     imgUrl: common.objUrl("img"),
     isZai: 0,//默认为0 不在线
+    isShouquan: true,
+    userData: {},
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '客资'
-    })
+    // if (wx.getStorageSync('userObj')){
+      var self = this;
+      wx.setNavigationBarTitle({
+        title: '客资'
+      })
+      self.setData({
+        userInfo: wx.getStorageSync('userObj'),
+        userInfoS: wx.getStorageSync('userinfo'),
+        isShouquan: wx.getStorageSync('shouquan')['scope.userInfo'] ? true : false,
+      })
+      // 获取用户信息
+    common.napaiGet("/pdb/login/base_info","",function(res){
+        if(res.data.code == 100000){
+          self.setData({
+            userData: res.data.data,
+            isZai: res.data.data.staffDetail.statusFlag,
+          })
+        }
+      })
+    // }else{
+      // wx.navigateTo({
+      //   url: '/pages/denglu/denglu',
+      // })
+    // }
+  },
+  bindGetUserInfo: function(e) {
+    // e 默认参数
+    //this  指向
+    common.bindGetUserInfo(e, this)
   },
   isZai:function(e){
     var isZai = common.eventdata(e).iszai;
     
     if (isZai == 0){
       // 切换为在线
-      isZai = 1
+      isZai = 1;
+      
     }else{
       // 切换为离线
       isZai = 0;
     }
+    common.napaiGet("/staff/set_status", { status:isZai},function(res){});
     this.setData({
       isZai: isZai,
     })
   },
+
   userTap:function(){
     wx.navigateTo({
       url: '/pages/userInfo/userInfo',

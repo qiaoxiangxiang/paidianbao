@@ -264,4 +264,7 @@
       </picker-view>
     </view>
   </view>
+  <!-- 底部 按钮 -->
+  <import src='/pages/common/common.wxml'/>
+  <template is="bottomBtn"></template>
 </view>

@@ -19,45 +19,15 @@
   </view>
   <view class="content">
     <view class="contentLeft">
-      <view class="contentLlist">
-        <image class="LlistImg" src="{{imgUrl}}/keziLB/keziLB_19.png" mode="widthFix"></image>
-        <view class="LlistTxt">所有客资</view>
+      <view class="contentLlist" wx:for="{{btnList}}" wx:key="{{index}}">
+        <image class="LlistImg" src="{{item.imgSrc}}" mode="widthFix"></image>
+        <view class="LlistTxt">{{item.memo}}</view>
         <view class="LlistNum">69</view>
-      </view>
-      <view class="contentLlist">
-        <image class="LlistImg" src="{{imgUrl}}/keziLB/keziLB_22.png" mode="widthFix"></image>
-        <view class="LlistTxt">新客资</view>
-        <view class="LlistNum">65</view>
-      </view>
-      <view class="contentLlist">
-        <image class="LlistImg" src="{{imgUrl}}/keziLB/keziLB_24.png" mode="widthFix"></image>
-        <view class="LlistTxt">带追踪</view>
-        <view class="LlistNum">6</view>
-      </view>
-      <view class="contentLlist">
-        <image class="LlistImg" src="{{imgUrl}}/keziLB/keziLB_26.png" mode="widthFix"></image>
-        <view class="LlistTxt">已预约</view>
-        <view class="LlistNum">25</view>
-      </view>
-      <view class="contentLlist">
-        <image class="LlistImg" src="{{imgUrl}}/keziLB/keziLB_28.png" mode="widthFix"></image>
-        <view class="LlistTxt">已进店</view>
-        <view class="LlistNum">10</view>
-      </view>
-      <view class="contentLlist">
-        <image class="LlistImg" src="{{imgUrl}}/keziLB/keziLB_30.png" mode="widthFix"></image>
-        <view class="LlistTxt">已订单</view>
-        <view class="LlistNum">8</view>
-      </view>
-      <view class="contentLlist">
-        <image class="LlistImg" src="{{imgUrl}}/keziLB/keziLB_32.png" mode="widthFix"></image>
-        <view class="LlistTxt">无效</view>
-        <view class="LlistNum">3</view>
       </view>
     </view>
     <view class="contentLeftK"></view>
     <view class="contentRight">
-      <view class="contentRlist">
+      <navigator url='/pages/keziDetail/keziDetail' class="contentRlist">
         <view class="RlistBox">
           <view class="RlistBoxLeft">姓名：</view>
           <view class="RlistBoxRight">小鱼</view>
@@ -110,8 +80,8 @@
           <view class="RlistBoxLeft">意向等级：</view>
           <view class="RlistBoxRight"></view>
         </view>
-      </view>
-      <view class="contentRlist">
+      </navigator>
+      <navigator url='/pages/keziDetail/keziDetail' class="contentRlist">
         <view class="RlistBox">
           <view class="RlistBoxLeft">姓名：</view>
           <view class="RlistBoxRight">小鱼</view>
@@ -164,7 +134,7 @@
           <view class="RlistBoxLeft">意向等级：</view>
           <view class="RlistBoxRight"></view>
         </view>
-      </view>
+      </navigator>
     </view>
   </view>
 </view>

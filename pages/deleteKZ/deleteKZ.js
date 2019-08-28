@@ -1,5 +1,5 @@
-// pages/denglu/denglu.js
-var common = require('../../static/common.js');
+// pages/WXZZ/WXZZ.js
+var common = require("../../static/common.js")
 Page({
 
   /**
@@ -7,35 +7,31 @@ Page({
    */
   data: {
     imgUrl: common.objUrl("img"),
+    wxzzNum: 0,//默认显示无效
   },
+  wxxzBtn:function(e){
+    this.setData({
+      wxzzNum: common.eventdata(e).index,
+    })
+  },
+  FixedBtn:function(e){
+    var index = common.eventdata(e).index;
+    if(index == 0){
+      //返回
+      wx.navigateBack({
+        delta: 1
+      })
+    }else{
 
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
-  phone:function(e){
-    this.setData({
-      phone: e.detail.value,
-    })
-  },
-  password:function(e){
-    this.setData({
-      password: e.detail.value,
-    })
-  },
-  DLBtn:function(){
-    var self = this;
-    var parse = {
-      username: self.data.phone,
-      password: self.data.password,
-    }
-    console.log(parse)
-    common.napaiGet("/pdb/login/get_company_list_by_phone", parse, function (res) {
-      console.log(res.data)
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
